@@ -67,6 +67,7 @@ void adminMenu(int admin_id){
                 deleteUser(delete_id -1);   // Delete the user
                 break;
             case 3:
+                readData('a');      // Read admin data
                 updatePassword(admin_id);   // Update the admin's password
                 writeData('a'); // Write the updated data to the database
                 break;
